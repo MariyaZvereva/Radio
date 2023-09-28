@@ -1,3 +1,4 @@
+
 public class Radio {
     private int currentStation;
     private int currentVolume;
@@ -8,7 +9,7 @@ public class Radio {
             currentStation++;
             return;
         }
-        if (currentStation == 9) {
+        else  {
             currentStation = 0;
 
         }
@@ -19,7 +20,9 @@ public class Radio {
             currentStation--;
             return;
         }
-        currentStation = 9;
+        else {
+            currentStation = 9;
+        }
     }
 
 
@@ -63,4 +66,5 @@ public class Radio {
             currentVolume = currentVolume - 1;
         }
     }
+
 }

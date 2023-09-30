@@ -8,8 +8,7 @@ public class Radio {
         if (currentStation != 9) {
             currentStation++;
             return;
-        }
-        else  {
+        } else {
             currentStation = 0;
 
         }
@@ -19,8 +18,7 @@ public class Radio {
         if (currentStation != 0) {
             currentStation--;
             return;
-        }
-        else {
+        } else {
             currentStation = 9;
         }
     }
@@ -55,6 +53,7 @@ public class Radio {
         }
         currentVolume = newCurrentVolume;
     }
+
     public void increaseVolume() {
         if (currentVolume < 100) {
             currentVolume = currentVolume + 1;

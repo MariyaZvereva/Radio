@@ -150,6 +150,19 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
 
     }
+    @Test
+    public void StationsMax() {
+
+        Radio radio = new Radio(20);
+
+        radio.setCurrentStation(14);
+
+        int expected = 14;
+        int actual = radio.getCurrentStation();
+
+        Assertions.assertEquals(expected, actual);
+
+    }
 
     @Test
     public void Volume() {

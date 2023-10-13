@@ -3,16 +3,8 @@ public class Radio {
     private int currentStation;
     private int currentVolume;
     private int maxStation;
-    private int maxVolume;
 
 
-    public void RadioVolume() {
-        this.maxVolume = 100;
-    }
-
-    public void RadioVolume(int volumeCount) {
-        this.maxVolume = volumeCount - 1;
-    }
     public Radio() {
         this.maxStation = 9;
     }
